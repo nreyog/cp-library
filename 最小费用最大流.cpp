@@ -9,7 +9,7 @@
 const int INF = 0x3f3f3f3f;
 int n, m, tot = 1, lnk[N], cur[N], ter[M], nxt[M], cap[M], cost[M], dis[N], min_cost;
 bool vis[N];
- 
+
 void add(int u, int v, int w, int c) {
     ter[++tot] = v, nxt[tot] = lnk[u], lnk[u] = tot, cap[tot] = w, cost[tot] = c;
 }
