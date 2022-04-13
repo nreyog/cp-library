@@ -1,3 +1,4 @@
+// 例题:https://loj.ac/p/119
 #include <bits/stdc++.h>
 
 using namespace std;
