@@ -2,8 +2,7 @@
 
 using namespace std;
 
-#define int long long
-#define maxn 1000005
+#define maxn 50005
 #define inf 2e9
 struct SegTree {
     
