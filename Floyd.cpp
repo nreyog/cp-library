@@ -4,10 +4,11 @@
 using namespace std;
 
 struct Floyd {
-    vector<vector<int>> g;
-    int n, inf = 1e9;
 
-    void init(int _n) {  // 初始化,输入点数
+    int n, inf = 1e9;
+    vector<vector<int>> g;
+
+    Floyd(int _n) { // 构造函数
         g.resize(_n + 5, vector<int> (_n + 5, inf));
         n = _n + 5;
     }
@@ -34,8 +35,7 @@ struct Floyd {
 int main() {
     int n;
     cin >> n;
-    Floyd F;
-    F.init(n);
+    Floyd F(n);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             int value;
