@@ -1,12 +1,18 @@
+// 例题:https://loj.ac/p/130
 #include <bits/stdc++.h>
+#define int long long
 
 using namespace std;
 
-#define maxn 50005
-#define inf 2e9
 struct SegTree {
     
-    int sum[maxn * 4], maxx[maxn * 4];
+    int inf = 2e9;
+    vector<int> sum, maxx;
+    
+    SegTree(int n) {
+        sum.resize(n * 4 + 5);
+        maxx.resize(n * 4 + 5);
+    }
 
     void change(int p, int l, int r, int x, int t) {    // 单点修改
         if (r < x || l > x) return;
@@ -42,7 +48,7 @@ struct SegTree {
 signed main() {
     int n, q;
     cin >> n >> q;
-    SegTree Seg;
+    SegTree Seg(n);
     for (int i = 1; i <= n; i++) {
         int a;
         cin >> a;
