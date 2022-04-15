@@ -4,10 +4,12 @@
 using namespace std;
 
 #define ull unsigned long long
+
 struct String_hash {
+
     vector<ull> pre, p;
 
-    void init(string s) {
+    String_hash(string s) { // 构造函数
         int n = s.size();
         pre.resize(n + 1);
         p.resize(n + 1);
@@ -26,9 +28,7 @@ struct String_hash {
 int main() {
     string a, b;
     cin >> a >> b;
-    String_hash A, B;
-    A.init(a);
-    B.init(b);
+    String_hash A(a), B(b);
     int n = a.size(), m = b.size(), res = 0;
     for (int i = 0; i + m - 1 < n; i++) {
         if (A.get_hash(i + 1, i + m) == B.get_hash(1, m)) res++;
