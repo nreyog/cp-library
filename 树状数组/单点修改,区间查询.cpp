@@ -1,3 +1,4 @@
+// 例题:https://loj.ac/p/130
 #include <bits/stdc++.h>
 #define int long long
 
