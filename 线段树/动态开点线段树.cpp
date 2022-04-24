@@ -3,12 +3,11 @@ struct SegTree {
     int cnt;
     vector<int> tr, lson, rson;
 
-    SegTree(int n) {
+    SegTree(int n) {    // 能开多大就开多大
         cnt = 2;
-        int max_len = n * 150;    // 能开多大就开多大
-        tr.resize(max_len);
-        lson.resize(max_len);
-        rson.resize(max_len);
+        tr.resize(n);
+        lson.resize(n);
+        rson.resize(n);
     }
 
     void change(int p, int l, int r, int x, int v) {
