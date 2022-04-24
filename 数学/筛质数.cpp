@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+ 
 vector<int> Eratosthenes(int n) {  // 埃氏筛,时间复杂度O(nloglogn)
     vector<int> prime;
     vector<bool> is_prime(n + 1, 1);
