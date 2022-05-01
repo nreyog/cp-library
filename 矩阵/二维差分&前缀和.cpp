@@ -1,7 +1,7 @@
 struct NumMatrix {
     int n, m;
     vector<vector<int>> sums;
-
+ 
     NumMatrix(int _n, int _m) {
 		n = _n;
 		m = _m;
