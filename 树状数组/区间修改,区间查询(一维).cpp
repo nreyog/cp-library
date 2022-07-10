@@ -9,6 +9,7 @@ struct BIT {
     int n;
     vector<int> d, t1, t2;
 
+    BIT() {}
     BIT(int _n) {
         n = _n;
         d.resize(n + 5);
