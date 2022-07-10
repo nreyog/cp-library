@@ -9,6 +9,7 @@ struct SegTree {
     int inf = 2e9;
     vector<int> sum, maxx;
     
+    SegTree() {}
     SegTree(int n) {
         sum.resize(n * 4 + 5);
         maxx.resize(n * 4 + 5);
