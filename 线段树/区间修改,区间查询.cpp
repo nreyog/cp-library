@@ -8,6 +8,7 @@ struct SegTree {
 
     vector<int> d, lazy;
 
+    SegTree() {}
     SegTree(int n) {
         d.resize(n * 4 + 5);
         lazy.resize(n * 4 + 5);
