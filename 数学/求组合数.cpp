@@ -19,6 +19,7 @@ struct Combine {
         return res % mod;
     }
 
+    Combine() {}
     Combine(int n) {    // 构造函数
         f.resize(n + 1), invf.resize(n + 1);
         f[0] = 1, invf[0] = 1;
