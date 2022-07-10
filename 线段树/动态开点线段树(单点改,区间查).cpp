@@ -3,6 +3,7 @@ struct SegTree {
     int cnt;
     vector<int> tr, lson, rson;
 
+    SegTree() {}
     SegTree(int n) {    // 能开多大就开多大
         cnt = 2;
         tr.resize(n);
