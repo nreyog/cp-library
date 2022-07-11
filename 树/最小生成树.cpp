@@ -31,7 +31,7 @@ struct MST {
         int cnt = 0, res = 0;
         sort(edges.begin(), edges.end(), [](vector<int>& a, vector<int>& b) {
             return a[2] < b[2];
-        });
+        }); 
         for (int i = 0; i < edges.size(); i++) {
             int u = edges[i][0], v = edges[i][1], w = edges[i][2];
             if (find(u) != find(v)) {
