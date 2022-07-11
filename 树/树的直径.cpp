@@ -72,7 +72,7 @@ signed main() {
     cin >> n;
     treeDiameter T(n);
     for (int i = 0; i < n - 1; i++) {
-        int u, v, w;
+        int u, v;
         cin >> u >> v;
         T.add(u, v, 1);
     }
