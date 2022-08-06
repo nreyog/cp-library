@@ -1,6 +1,6 @@
-deque<int> q;   // 初始化
+deque<int> q    // 初始化
 
-q.push_back(x); // 向容器尾部添加一个元素
+q.push_back(x)  // 向容器尾部添加一个元素
 
 q.push_front(x) // 向容器头部添加一个元素
 
