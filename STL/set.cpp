@@ -29,3 +29,19 @@ for (auto x : s) {  // 正向遍历
 for (auto it = --s.end(); it != --s.begin(); it--) {    // 反向遍历
     cout << *it << ' ';   
 }
+
+// 自定义结构体，按关键字y从小到大排序
+struct node {
+    int x, y;
+    bool operator < (node const a) const {
+        return y < a.y;
+    }
+};
+
+set<node> s;   
+s.insert({1, 2});
+s.insert({2, 1});
+s.insert({3, 3});
+for (auto it : s) {
+    cout << it.x << ' ' << it.y << endl;
+}
