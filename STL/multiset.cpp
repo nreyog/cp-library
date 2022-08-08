@@ -34,7 +34,7 @@ for (auto it = --s.end(); it != --s.begin(); it--) {    // 反向遍历
     cout << *it << ' ';   
 }
 
-// 自定义结构体排序
+// 自定义结构体，按关键字y从小到大排序
 struct node {
     int x, y;
     bool operator < (const node& a) const {
